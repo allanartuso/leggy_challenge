@@ -50,9 +50,7 @@ function calc(data, exit) {
         if (maxCheck) {
             excludeMax.unshift(maxCheck);
             data = rebalanceQuotes(maxCheck.name, data);
-            // console.log("maxCheck.ret", maxCheck.ret)
             updateExit -= maxCheck.ret;
-            // console.log("updateExit", updateExit)
         }
 
     }

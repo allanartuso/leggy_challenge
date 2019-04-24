@@ -20,12 +20,6 @@ export function liquidation(data) {
         const calculated = calc(shareHolders.reverse(), exit);
         exitResult[exit] = sort(calculated, "index");
 
-        // let sumRet = 0;
-        // for (const el of calculated) {
-        //     sumRet += el.ret;
-        // }
-        // console.log("exit", exit, "sumRet", sumRet);
-
     }
 
 

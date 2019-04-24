@@ -12,7 +12,6 @@ function checkConvert(check, exit) {
         const maxRet: number = serie.invested * serie.cap;
         let minRet: number = serie.invested * serie.preference;
         if (minRet > updateExit) minRet = updateExit;
-        let method1: number = minRet + updatedCommomMin * quote;
         const commom = quote * updatedCommomMin;
 
         if (commom > maxRet) {
